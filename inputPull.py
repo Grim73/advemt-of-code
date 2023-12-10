@@ -12,6 +12,6 @@ def getToday():
     url = f"https://adventofcode.com/{year}/day/{day}/input"
     print(url)
     input()
-    os.system(f'curl -o input.txt "{url}" --cookie {cookie}')
+    os.system(f'curl -o {dest} "{url}" --cookie {cookie}')
 
 getToday()
